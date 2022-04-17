@@ -3,6 +3,17 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
+        stash 'files'
+        sh 'rm readme.txt'
+        echo "${params.airchie}"
+        echo 'Hello World'
+        sh 'ls -l'
+      }
+    }
+
+    stage('naxvamdis') {
+      steps {
+        unstash 'files'
         echo "${params.airchie}"
         echo 'Hello World'
         sh 'ls -l'
