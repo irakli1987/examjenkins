@@ -18,7 +18,7 @@ pipeline {
         echo 'Hello World'
         sh 'ls -l'
         archiveArtifacts(artifacts: '**.*', fingerprint: true)
-        mail(subject: 'test', body: 'test', from: 'jenk', to: 'tkebuchava.irakli@gmail.com')
+        mail(subject: 'test', body: 'test', from: 'jenkins@globalpharm.ge', to: 'tkebuchava.irakli@gmail.com')
       }
     }
 
