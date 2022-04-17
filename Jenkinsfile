@@ -17,7 +17,7 @@ pipeline {
         echo "${params.airchie}"
         echo 'Hello World'
         sh 'ls -l'
-        archiveArtifacts artifacts: '', fingerprint: true, followSymlinks: false
+        archiveArtifacts artifacts: '**.*', fingerprint: true, followSymlinks: false
       }
     }
 
