@@ -17,6 +17,7 @@ pipeline {
         echo "${params.airchie}"
         echo 'Hello World'
         sh 'ls -l'
+        archiveArtifacts '**.*'
       }
     }
 
