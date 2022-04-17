@@ -18,7 +18,7 @@ pipeline {
         echo 'Hello World'
         sh 'ls -l'
         archiveArtifacts(artifacts: '**.*', fingerprint: true)
-        emailext(attachLog: true, body: 'tuar gezareba xoar wagvevarjisha? ', subject: 'xoar wagvevarjisha', to: 'tkebuchava.irakli@gmail.com', from: 'jenkinsexamprep')
+        emailext(attachLog: true, body: 'tuar gezareba xoar wagvevarjisha? ', subject: 'xoar wagvevarjisha', to: 'gio_333m@yahoo.com', from: 'jenkins@globalpharm.ge')
       }
     }
 
