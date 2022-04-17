@@ -19,6 +19,7 @@ pipeline {
         sh 'ls -l'
         archiveArtifacts(artifacts: '**.*', fingerprint: true)
         mail(subject: 'test', body: 'test', from: 'jenkins@globalpharm.ge', to: 'tkebuchava.irakli@gmail.com')
+        emailext(attachLog: true, body: 'test mail', subject: 'test mail', to: 'tkebuchava.irakli@gmail.com')
       }
     }
 
