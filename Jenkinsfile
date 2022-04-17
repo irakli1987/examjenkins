@@ -4,7 +4,7 @@ pipeline {
     stage('Hello') {
       steps {
         stash 'files'
-        sh 'rm readme.txt'
+        sh 'rm README.md'
         echo "${params.airchie}"
         echo 'Hello World'
         sh 'ls -l'
