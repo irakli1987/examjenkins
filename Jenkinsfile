@@ -5,7 +5,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-              sh 'ls-l'
+              sh 'ls -l'
             }
         }
     }
